@@ -1,0 +1,11 @@
+.parallax-container {
+	position: relative;
+	height: 995px;
+}
+
+.header {
+  position: relative;
+  margin-top: 15%;
+  z-index: 3;
+  color: rgba(255,255,255,.9);
+}
