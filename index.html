@@ -3,8 +3,13 @@
     <head>
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"  media="screen,projection"/>
+
+      <!-- mobile devices -->
+      <link type="text/css" rel="stylesheet" href="css/devices.min.css"  media="screen,projection"/>
 
       <!-- index styles -->
       <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
@@ -14,22 +19,197 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <body style="height: 100%; overflow: hidden;">
+    <body>
 
-    <div class="parallax-container">
+    <!-- Welcome Page -->
+    <div class="parallax-container welcome">
       <div class="parallax">
-        <img src="img/parallax2.jpg">
+        <img src="img/parallax1.jpg">
         <div class="row center">
-          <h3 class="header col s12 light">mandelbrot technologies<br />coming soon</h3>
+          <h3 class="header col s12 light lato-thin">Mandelbrot Technologies<br />coming soon</h3>
         </div>
       </div>
     </div>
 
-      <div class="welcome-screen">
-        <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
-      </div>     
+    <div class="star-container">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+    </div>   
+    <!-- End Welcome Page -->
+
+    <!-- About Page -->
+    <div id="about" class="container light-section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-action-view-carousel brown-text"></i></h3>
+          <h4>About Mandelbrot Technologies</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>     
+
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>    
+
+          <div class="marvel-device ipad silver landscape tooltipped hide-on-small-only" data-position="right" data-delay="50" data-tooltip="Click to zoom, Ctrl+click to zoom out">
+              <div class="camera"></div>
+              <div class="screen">
+                  <canvas id="mandelbrot-viewport" width="640" height="480"></canvas>
+              </div>
+              <div class="home"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>  
+    <!-- End About Page -->
+
+    <br />
+    <div class="divider"></div>
+
+    <!-- Mandelbrot Set Page -->
+    <div id="mandelbrot-set" class="container light-section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-action-stars brown-text"></i></h3>
+          <h4>The Mandelbrot Set</h4>
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/airbook.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Airbook<i class="material-icons right">more_vert</i></span>
+                <p><a href="http://airbook.openmanage.co.za/" target="_blank">airbook.openmanage.co.za</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="http://materializecss.com/images/office.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="http://materializecss.com/images/office.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>  
+
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="http://materializecss.com/images/office.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="http://materializecss.com/images/office.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="http://materializecss.com/images/office.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div> 
+        </div>
+      </div>
+    </div> 
+    <!-- End Mandelbrot Set Page -->   
+
+    <br />
+    <div class="divider"></div>    
+
+    <!-- Team Page -->
+    <div id="team" class="container light-section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-social-group brown-text"></i></h3>
+          <h4>Meet the Mandelbrot Team</h4>
+
+            <div class="team-member-card-container">
+              <div class="hexagon" style="background: url('img/loshan.png');">
+                <a href="#"><div class="content"></div></a>
+              </div>
+              <div class="team-member-card">
+
+              </div>
+            </div>
+
+            <div class="team-member-card-container">
+              <div class="hexagon" style="background: url('img/loshan.png');">
+                <a href="#"><div class="content"></div></a>
+              </div>
+              <div class="team-member-card">
+
+              </div>
+            </div>    
+            
+            <div class="team-member-card-container">
+              <div class="hexagon" style="background: url('img/loshan.png');">
+                <a href="#"><div class="content"></div></a>
+              </div>
+              <div class="team-member-card">
+
+              </div>
+            </div>  
+
+            <div class="team-member-card-container">
+              <div class="hexagon" style="background: url('img/loshan.png');">
+                <a href="#"><div class="content"></div></a>
+              </div>
+              <div class="team-member-card">
+
+              </div>
+            </div>                                  
+
+        </div>
+      </div>
+    </div>  
+    <!-- End Team Page -->     
 
       <!--Import jQuery before materialize.js -->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -37,5 +217,8 @@
 
       <!-- index specific js -->
       <script type="text/javascript" src="js/index.js"></script>
+
+      <!-- mandelbrot generator -->
+      <script type="text/javascript" src="js/mandelbrot-fractal.js"></script>
     </body>
   </html>

@@ -1,4 +1,10 @@
-
+.star-container {
+  position: absolute;
+  top: 0;
+  height: 47%;
+  width: 100%;
+  overflow: hidden;
+}
 
 #stars {
   position: absolute;
