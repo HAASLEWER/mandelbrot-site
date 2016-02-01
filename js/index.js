@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	var window_height = window.innerHeight;
+	$('.parallax-container.welcome').css("height", window_height);
+
 	// initialize paralax scrolling
 	$('.parallax').parallax();
 
