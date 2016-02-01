@@ -169,3 +169,11 @@
 .team-member-card-footer a {
 	color: #FFFFFF;
 }
+
+/*
+	Contact Us Page
+*/
+#map {
+    width:	100%;
+    height: 500px;
+}
