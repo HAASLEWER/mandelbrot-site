@@ -74,6 +74,7 @@
 	display: inline-block;
 	margin-right: 10px;
 	margin-bottom: 120px;
+	color: #000000;
 }
 
 .hexagon {
@@ -108,4 +109,63 @@
 	-webkit-border-radius: 2px 2px 2px 2px;
 	border: 0px solid #000000;	
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);	
+}
+
+.team-member-card-content {
+	position: relative;
+	display: inline-block;
+	margin-top: 140px;
+}
+
+.team-member-card:hover .team-member-card-footer {
+	background-color: #db3502;
+    transition: box-shadow .25s;
+}
+
+.team-member-card-head {
+	position: relative;
+	display: inline-block;
+	font-size: 14pt;
+	font-weight: 500;
+}
+
+.team-member-card-sub {
+	position: relative;
+	display: inline-block;
+	font-size: 12pt;
+}
+
+.team-member-card-p {
+	position: relative;
+	display: inline-block;
+	font-size: 11pt;	
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.team-member-card-footer {
+	position: absolute;
+	height: 50px;
+	width: 100%;
+	bottom: 0;
+	background-color: #1cb0a1;
+	color: #ffffff;
+	font-size: 20pt;
+	line-height: 50px;
+	vertical-align: middle;
+	-webkit-border-bottom-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.team-member-card-footer .fa {
+	margin-right: 20px;
+}
+
+.team-member-card-footer a {
+	color: #FFFFFF;
 }
