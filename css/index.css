@@ -102,6 +102,10 @@ p.left-align.light {
     vertical-align: middle;
 }
 
+.card-reveal p {
+	text-align: justify;
+}
+
 /*
 	Services Page
 */
