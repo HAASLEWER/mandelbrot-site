@@ -1,7 +1,6 @@
 /*
 	Welcome Page 
 */
-
 .parallax-container.welcome {
 	height: 500px;
 }
@@ -61,10 +60,10 @@ p.left-align.light {
 /* 
 	Mandelbrot Set Page 
 */
-
 #mandelbrot-set .card {
 	display: inline-block;
-	width: 384px;
+	min-width: 300px;
+	max-width: 384px;
 	margin-right: 10px;
 }
 
@@ -75,6 +74,7 @@ p.left-align.light {
 .mandel-set-card {
 	display: inline-block;
 }
+
 
 /* Our Clients */
 .client-card {
@@ -107,7 +107,7 @@ p.left-align.light {
 */
 .service-container {
 	display: inline-block;
-	margin-right: 50px;
+	width: 200px;
 }
 
 .service-icon {
@@ -128,7 +128,6 @@ p.left-align.light {
 /* 
 	Team Page 
 */
-
 .team-member-card-container {
 	height: 570px;
 	width: 320px;
